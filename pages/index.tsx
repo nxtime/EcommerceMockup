@@ -1,21 +1,15 @@
 import type { NextPage } from "next";
-import Head from "next/head";
-import { Header } from "../components/Header";
+import { Layout } from "../components/Layout";
 import { Banner } from "../components/Banner";
 import { Cards } from "../components/Cards";
 
 const Home: NextPage = () => {
     return (
         <>
-            <Head>
-                <title>Ezmind Ecommerce</title>
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
-            <Header />
-            <main className="">
+            <Layout title="EzmindCommerce - Home">
                 <Banner />
-                <Cards className="mt-8 sm:-mt-48"/>
-            </main>
+                <Cards className="mt-8 sm:-mt-48" />
+            </Layout>
         </>
     );
 };
